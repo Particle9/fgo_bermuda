@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/story/main.rpy", line 14, in script call
+    call prologue_chapter0
+  File "game/story/bermuda/chapter0_prologue.rpy", line 5, in script call
+    call prologue_arrow0
+  File "game/story/bermuda/chapter0_prologue.rpy", line 70, in script
+    scene bg space velber_flight with flash
+  File "game/story/bermuda/chapter0_prologue.rpy", line 70, in <module>
+    scene bg space velber_flight with flash
+NameError: name 'flash' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/story/main.rpy", line 14, in script call
+    call prologue_chapter0
+  File "game/story/bermuda/chapter0_prologue.rpy", line 5, in script call
+    call prologue_arrow0
+  File "game/story/bermuda/chapter0_prologue.rpy", line 70, in script
+    scene bg space velber_flight with flash
+  File "/Users/muhammadaufahelfiandri/Documents/renpy-8.0.3-sdk/renpy/ast.py", line 1654, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "/Users/muhammadaufahelfiandri/Documents/renpy-8.0.3-sdk/renpy/python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "/Users/muhammadaufahelfiandri/Documents/renpy-8.0.3-sdk/renpy/python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/story/bermuda/chapter0_prologue.rpy", line 70, in <module>
+    scene bg space velber_flight with flash
+NameError: name 'flash' is not defined
+
+macOS-10.16-x86_64-i386-64bit x86_64
+Ren'Py 8.0.3.22090809
+LB66 Bermuda 1.0
+Mon Nov 28 13:14:52 2022
